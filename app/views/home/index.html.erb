@@ -1,0 +1,13 @@
+<h1>ВITJunk</h1>
+<p>Free file hosting in the future</p>
+
+<% if garbage_man_signed_in? %>
+  <span>Здравствуйте, <%= current_garbage_man.email %></span>
+  <%= link_to 'Выйти', destroy_garbage_man_session_path, :method => :delete %>
+  <%= link_to 'Редактировать профиль', edit_garbage_man_registration_path %>
+
+<%# else %>
+<!--  <%#= link_to 'Войти', new_garbage_man_session_path %> или <%#= link_to 'Зарегистрироваться', new_garbage_man_registration_path %>-->
+<% end %>
+<!--<p class="notice"><%#= notice %></p>-->
+<!--<p class="alert"><%#= alert %></p>-->
