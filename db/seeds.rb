@@ -10,6 +10,6 @@ AdminUser.all.delete_all
 GarbageMan.all.delete_all
 role = Role.create(name: 'Admin')
 role1 = Role.create(name: 'User')
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password', role: role) if Rails.env.development?
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password', role: role) #if Rails.env.development?
 GarbageMan.create(login: 'immoraly', email: 'berkos@mail.ru', password: 'password', role: role1)
 
